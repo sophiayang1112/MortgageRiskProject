@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "MortgageRiskLab"
+name = "MortgageRiskProject"
 version = "0.1.0"
 description = "Reproducible mortgage default classification and portfolio segmentation on synthetic data"
 requires-python = ">=3.11"

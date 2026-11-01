@@ -1,4 +1,4 @@
-# MortgageRiskLab
+# MortgageRiskProject
 
 A complete, reproducible mortgage-default classification workflow connecting **AI/ML, Finance, and Risk Management**.
 
