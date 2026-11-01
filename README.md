@@ -65,8 +65,6 @@ docs/                      Data dictionary, methodology and model boundaries
 reports/                   Actual generated evaluation outputs
 ```
 
-## Important boundaries
 
-This project is an educational research prototype, not an underwriting or credit-decision system. The generated target reflects a hand-defined probability model. No fraud label is available, so this is default-risk modeling, not fraud detection. There is no claim of regulatory compliance, fair-lending validation, causal explanation, production readiness, or return on investment. Protected attributes are not generated; their absence does not prove fairness.
 
 Real deployment would require lawful data access, a defined default horizon, temporal/out-of-time validation, calibration and stability checks, fairness assessment, explainability review, model governance, security controls, and monitoring.
