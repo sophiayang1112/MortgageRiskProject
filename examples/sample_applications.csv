@@ -1,0 +1,3 @@
+annual_income,loan_amount,credit_score,debt_to_income,loan_to_value,employment_years,interest_rate,prior_delinquencies,loan_purpose,property_type
+95000,290000,740,0.22,0.72,8,0.045,0,purchase,house
+62000,310000,610,0.49,0.96,2,0.082,2,cash_out,condo

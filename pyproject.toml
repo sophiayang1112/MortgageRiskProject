@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "MortgageRiskLab"
+version = "0.1.0"
+description = "Reproducible mortgage default classification and portfolio segmentation on synthetic data"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<4", "scikit-learn>=1.5,<2", "matplotlib>=3.9,<4", "joblib>=1.4,<2"]
+
+[project.scripts]
+mortgage-risk = "mortgage_risk.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["mortgage_risk*"]

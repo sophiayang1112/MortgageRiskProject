@@ -1,0 +1,369 @@
+{
+  "data_source": "synthetic; no real borrower records",
+  "seed": 42,
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scikit_learn": "1.9.1"
+  },
+  "rows": 4000,
+  "default_rate": 0.11025,
+  "split_sizes": {
+    "train": 2400,
+    "validation": 800,
+    "test": 800
+  },
+  "selection_rule": "highest validation ROC-AUC excluding baseline",
+  "selected_model": "logistic",
+  "threshold": 0.15,
+  "cost_assumption": {
+    "false_negative": 5,
+    "false_positive": 1,
+    "validation_cost_per_application": 0.41
+  },
+  "validation_at_0_5": {
+    "baseline": {
+      "roc_auc": 0.5,
+      "pr_auc_average_precision": 0.11,
+      "brier_score": 0.09790017361111111,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          712,
+          0
+        ],
+        [
+          88,
+          0
+        ]
+      ]
+    },
+    "logistic": {
+      "roc_auc": 0.7492977528089887,
+      "pr_auc_average_precision": 0.3020593619719095,
+      "brier_score": 0.0879163117960828,
+      "precision": 0.6666666666666666,
+      "recall": 0.06818181818181818,
+      "f1": 0.12371134020618557,
+      "confusion_matrix": [
+        [
+          709,
+          3
+        ],
+        [
+          82,
+          6
+        ]
+      ]
+    },
+    "cart": {
+      "roc_auc": 0.6448305030643514,
+      "pr_auc_average_precision": 0.17337424776110302,
+      "brier_score": 0.10194956784171928,
+      "precision": 0.07142857142857142,
+      "recall": 0.011363636363636364,
+      "f1": 0.0196078431372549,
+      "confusion_matrix": [
+        [
+          699,
+          13
+        ],
+        [
+          87,
+          1
+        ]
+      ]
+    },
+    "random_forest": {
+      "roc_auc": 0.7123659346271707,
+      "pr_auc_average_precision": 0.2661132312263671,
+      "brier_score": 0.0915013779399792,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          712,
+          0
+        ],
+        [
+          88,
+          0
+        ]
+      ]
+    },
+    "gradient_boosting": {
+      "roc_auc": 0.7176487487231871,
+      "pr_auc_average_precision": 0.27811028911142643,
+      "brier_score": 0.09051517659924814,
+      "precision": 0.6666666666666666,
+      "recall": 0.06818181818181818,
+      "f1": 0.12371134020618557,
+      "confusion_matrix": [
+        [
+          709,
+          3
+        ],
+        [
+          82,
+          6
+        ]
+      ]
+    },
+    "pca_logistic": {
+      "roc_auc": 0.7473027323799796,
+      "pr_auc_average_precision": 0.2996438100646329,
+      "brier_score": 0.08826759975241018,
+      "precision": 0.7142857142857143,
+      "recall": 0.056818181818181816,
+      "f1": 0.10526315789473684,
+      "confusion_matrix": [
+        [
+          710,
+          2
+        ],
+        [
+          83,
+          5
+        ]
+      ]
+    }
+  },
+  "test_at_0_5": {
+    "baseline": {
+      "roc_auc": 0.5,
+      "pr_auc_average_precision": 0.11,
+      "brier_score": 0.09790017361111111,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          712,
+          0
+        ],
+        [
+          88,
+          0
+        ]
+      ]
+    },
+    "logistic": {
+      "roc_auc": 0.7939862104187946,
+      "pr_auc_average_precision": 0.3091321671383368,
+      "brier_score": 0.08705344064066974,
+      "precision": 0.5,
+      "recall": 0.045454545454545456,
+      "f1": 0.08333333333333333,
+      "confusion_matrix": [
+        [
+          708,
+          4
+        ],
+        [
+          84,
+          4
+        ]
+      ]
+    },
+    "cart": {
+      "roc_auc": 0.6832386363636364,
+      "pr_auc_average_precision": 0.22592230146532327,
+      "brier_score": 0.09525647828757206,
+      "precision": 0.3333333333333333,
+      "recall": 0.03409090909090909,
+      "f1": 0.061855670103092786,
+      "confusion_matrix": [
+        [
+          706,
+          6
+        ],
+        [
+          85,
+          3
+        ]
+      ]
+    },
+    "random_forest": {
+      "roc_auc": 0.7783133299284986,
+      "pr_auc_average_precision": 0.2967788847458426,
+      "brier_score": 0.08881089795350829,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          712,
+          0
+        ],
+        [
+          88,
+          0
+        ]
+      ]
+    },
+    "gradient_boosting": {
+      "roc_auc": 0.7648509320735445,
+      "pr_auc_average_precision": 0.2909839997945105,
+      "brier_score": 0.089557964735757,
+      "precision": 0.25,
+      "recall": 0.011363636363636364,
+      "f1": 0.021739130434782608,
+      "confusion_matrix": [
+        [
+          709,
+          3
+        ],
+        [
+          87,
+          1
+        ]
+      ]
+    },
+    "pca_logistic": {
+      "roc_auc": 0.7858305669050051,
+      "pr_auc_average_precision": 0.31159937014320804,
+      "brier_score": 0.08687946031421909,
+      "precision": 0.5,
+      "recall": 0.056818181818181816,
+      "f1": 0.10204081632653061,
+      "confusion_matrix": [
+        [
+          707,
+          5
+        ],
+        [
+          83,
+          5
+        ]
+      ]
+    }
+  },
+  "selected_test_at_validation_threshold": {
+    "roc_auc": 0.7939862104187946,
+    "pr_auc_average_precision": 0.3091321671383368,
+    "brier_score": 0.08705344064066974,
+    "precision": 0.2768361581920904,
+    "recall": 0.5568181818181818,
+    "f1": 0.36981132075471695,
+    "confusion_matrix": [
+      [
+        584,
+        128
+      ],
+      [
+        39,
+        49
+      ]
+    ]
+  },
+  "validation_permutation_importance": [
+    {
+      "feature": "credit_score",
+      "mean_auc_decrease": 0.08638598059244115,
+      "std": 0.016924115762343653
+    },
+    {
+      "feature": "debt_to_income",
+      "mean_auc_decrease": 0.07845697139938705,
+      "std": 0.004737361513803918
+    },
+    {
+      "feature": "prior_delinquencies",
+      "mean_auc_decrease": 0.05187053115423894,
+      "std": 0.011413907279794284
+    },
+    {
+      "feature": "loan_to_value",
+      "mean_auc_decrease": 0.025121297242083694,
+      "std": 0.005120641285505028
+    },
+    {
+      "feature": "annual_income",
+      "mean_auc_decrease": 0.02198352911133805,
+      "std": 0.005083422044260566
+    },
+    {
+      "feature": "loan_amount",
+      "mean_auc_decrease": 0.008998340143002959,
+      "std": 0.006217792907940103
+    },
+    {
+      "feature": "loan_purpose",
+      "mean_auc_decrease": 0.005372191011235872,
+      "std": 0.003400085732317887
+    },
+    {
+      "feature": "interest_rate",
+      "mean_auc_decrease": 0.0018737231869253579,
+      "std": 0.0028091991401394674
+    },
+    {
+      "feature": "property_type",
+      "mean_auc_decrease": 0.001232124616956054,
+      "std": 0.0005147393959473864
+    },
+    {
+      "feature": "employment_years",
+      "mean_auc_decrease": -0.0009735699693566024,
+      "std": 0.003002021466761462
+    }
+  ],
+  "training_segments": [
+    {
+      "cluster": 0,
+      "count": 584,
+      "observed_synthetic_default_rate": 0.17123287671232876,
+      "annual_income": 77821.68638601189,
+      "loan_amount": 246862.42384993596,
+      "credit_score": 681.5485533160313,
+      "debt_to_income": 0.2922010514191474,
+      "loan_to_value": 0.6881285707956559,
+      "employment_years": 4.25632646588126,
+      "interest_rate": 0.06663320845951173,
+      "prior_delinquencies": 1.0
+    },
+    {
+      "cluster": 1,
+      "count": 365,
+      "observed_synthetic_default_rate": 0.09863013698630137,
+      "annual_income": 167200.92569231248,
+      "loan_amount": 672482.5507265344,
+      "credit_score": 690.2928292581078,
+      "debt_to_income": 0.28829369234652835,
+      "loan_to_value": 0.7122432993284943,
+      "employment_years": 4.72692156894916,
+      "interest_rate": 0.06848565888807903,
+      "prior_delinquencies": 0.0
+    },
+    {
+      "cluster": 2,
+      "count": 779,
+      "observed_synthetic_default_rate": 0.10397946084724005,
+      "annual_income": 73856.60337050707,
+      "loan_amount": 240518.5548644441,
+      "credit_score": 706.1669469207362,
+      "debt_to_income": 0.2989759196994087,
+      "loan_to_value": 0.9000969347283363,
+      "employment_years": 3.101285310828609,
+      "interest_rate": 0.06119634102971282,
+      "prior_delinquencies": 0.0
+    },
+    {
+      "cluster": 3,
+      "count": 672,
+      "observed_synthetic_default_rate": 0.07142857142857142,
+      "annual_income": 75896.02500750165,
+      "loan_amount": 233513.3382740806,
+      "credit_score": 675.2146042055231,
+      "debt_to_income": 0.27012892598510585,
+      "loan_to_value": 0.5353334957015916,
+      "employment_years": 5.397346342196814,
+      "interest_rate": 0.06516359931906365,
+      "prior_delinquencies": 0.0
+    }
+  ]
+}
